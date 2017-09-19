@@ -24,4 +24,11 @@ we look for words that will make up the full word.
 
 ----------------------------OUTPUT------------------------------------------------------------
 
-![alt text](https://raw.githubusercontent.com/manojkundla/FindTheLongestWord/master/TrieWordProcesser/Data/Capture.png)
+![Number of words to process: 173529
+
+
+First longest word: microspectrophotometers = micros,pec,trop,hot,om,et,ers
+
+Second longest word: microspectrophotometer = micros,pec,trop,hot,om,et,er
+
+Total number of words constructed of other words: 97108](https://raw.githubusercontent.com/manojkundla/FindTheLongestWord/master/FindTheLongestWord/TrieWordProcesser/Data/Capture.PNG)
