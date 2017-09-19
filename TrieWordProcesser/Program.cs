@@ -25,7 +25,6 @@ namespace TrieWordProcesser
             }
             Console.WriteLine("\r              ");
             List<Word> completewords = words.Where(x => x.IsComplete()).ToList();           
-            Console.WriteLine();
             List<Word> topTwenty = completewords
                 .OrderByDescending(x => x.NumberOfSubWords)
                 .ThenByDescending(x => x.Name.Length)
@@ -36,6 +35,13 @@ namespace TrieWordProcesser
             Console.WriteLine("Second longest word: {0} = {1}", topTwenty[1].Name, string.Join(",", topTwenty[1].SubWords()));
             Console.WriteLine("\r              ");
             Console.WriteLine("Total number of words constructed of other words: {0}", completewords.Count);
+            Console.WriteLine("\r              ");
+            Console.WriteLine("Top 20 longest words:");
+            Console.WriteLine("\r              ");
+            foreach (Word w in topTwenty)
+            {
+                Console.WriteLine(string.Format("{0} = {1}", w.Name, string.Join(",", w.SubWords())));
+            }
             Console.ReadKey();
         }
 
